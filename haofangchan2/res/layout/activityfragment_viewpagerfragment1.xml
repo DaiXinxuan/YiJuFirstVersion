@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       	<View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#EBEBEB" />
+
+  <!-- <LinearLayout 
+            android:id="@+id/qiandao_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_background"
+            android:padding="5dp" > -->      
+			
+			    <TextView
+                android:id="@+id/acti_introduce_viewpagerfragment1"
+                android:layout_marginLeft="10dp"
+            	android:layout_marginRight="10dp"
+            	android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:text="      活动介绍：" 
+                android:textColor="#505050"/>
+            
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动时间："
+                android:textColor="#FF9224" />
+
+            <TextView
+                android:id="@+id/acti_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#505050" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动说明："
+                android:textColor="#FF9224" />
+
+            <TextView
+                android:id="@+id/acti_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#505050" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_buttonview"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="点击今日签到"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text"
+                android:src="@drawable/signin1x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/sign_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="签到总天数："
+                android:textColor="#FF9224"
+                 />
+
+            <TextView
+                android:id="@+id/acti_leiji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="累积奖励："
+                android:textColor="#FF9224" />
+
+            <TextView
+                android:id="@+id/acti_prize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/sign_days"
+                android:layout_toRightOf="@+id/acti_leiji"
+                android:textColor="#505050" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

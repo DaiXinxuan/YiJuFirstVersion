@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:background="#E0E0E0">
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="#005b97"
+	        android:padding="5dp" >
+	
+	        <ImageView
+	            android:id="@+id/reserve_back"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_centerVertical="true"
+	            android:clickable="true"
+	            android:onClick="onClick"
+	            android:src="@drawable/tuoyuan4" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="预定看房"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp" >
+	        </TextView>
+	    </RelativeLayout>
+	    
+	    <TextView 
+	        android:id="@+id/reserve_houseCode"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="4dp"
+	        android:padding="10dp"
+	        android:text="房屋编号:"
+	        android:background="#FFFFFF"
+	        />
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="10dp">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:text="看房人："
+	            android:textSize="15sp"/>
+	        
+	        <EditText 
+	            android:id="@+id/reserve_person"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:background="#FFFFFF"
+	            android:hint="请输入您的姓名"
+	            android:textSize="15sp"/>
+	        
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="1dp">
+	        
+	        <TextView 
+	            android:id="@+id/reserve_dateTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="看房日期："
+	            android:textSize="15sp"
+	            android:padding="10dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/reserve_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/reserve_dateTextView"
+	            android:hint="请选择"
+	            android:textSize="15sp"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            />
+	        
+	        <ImageButton
+	            android:id="@+id/reserve_selectDate"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/select_date"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="6dp"
+	            android:layout_marginRight="10dp"
+	            />
+		</RelativeLayout>
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="1dp">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="#FFFFFF"
+		        android:layout_marginTop="1dp"
+		        android:padding="10dp"
+		        android:text="手机号："
+		        android:textSize="15sp"/>
+	        
+	        <EditText 
+	            android:id="@+id/reserve_phoneNumber"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:background="#FFFFFF"
+	            android:inputType="number"
+	            android:textSize="15sp"/>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="1dp">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="#FFFFFF"
+		        android:layout_marginTop="1dp"
+		        android:padding="10dp"
+		        android:text="看房人数："
+		        android:textSize="15sp"/>
+	        
+	        <Spinner 
+	            android:id="@+id/reserve_peopleNumber"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="#FFFFFF"
+	            android:entries="@array/peopleNumberInfo"
+	            />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="1dp">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="#FFFFFF"
+		        android:layout_marginTop="1dp"
+		        android:padding="10dp"
+		        android:text="看房说明："
+		        android:textSize="15sp"/>
+	        
+	        <EditText 
+	            android:id="@+id/reserve_introduction"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:background="#FFFFFF"
+	            android:textSize="15sp"/>
+	        
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:text="注意事项："
+	        android:textSize="13sp"
+	        android:textColor="#F48E51"/>
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:text="@string/payAttention"
+	        android:textSize="13sp"/>
+	    	
+	</LinearLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#FFFFFF"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:layout_alignParentBottom="true">
+	    
+	    <Button 
+	        android:id="@+id/reserve_ensure"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确认预定看房"
+	        android:textSize="15sp"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:background="@drawable/corner"/>
+	    
+	</RelativeLayout>
+</RelativeLayout>

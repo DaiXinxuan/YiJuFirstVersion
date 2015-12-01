@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="group2">
+        <item>最近联系人</item>
+        <item>我的好友</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    
+    
+  <!-- 顶部栏“预定看房”-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005b97"
+        android:padding="10dp" >
+
+     <ImageView
+        android:id="@+id/ordermore_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tuoyuan4" />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="预定看房"
+        android:textColor="#ffffff"
+        android:textSize="20sp" >
+    </TextView>
+    </RelativeLayout>
+    
+    <!-- 看房编号 -->
+    <RelativeLayout
+        android:id="@+id/watchhouse_code" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"        >
+     <TextView
+        android:id="@+id/watchhouse_code_tv" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房屋编号:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/> 
+     <EditText 
+        android:id="@+id/watchhouse_code_et" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dp"
+        android:textColor="#00001F"
+        android:editable="false"
+        android:layout_toRightOf="@+id/watchhouse_code_tv"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textSize="15sp"
+        />   
+    </RelativeLayout>
+    
+    <!-- 分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#E0E0E0" />
+    
+    <!-- 看房人 -->
+    <RelativeLayout 
+        android:id="@+id/watching_person" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+       <TextView 
+        android:id="@+id/watch_person_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看房人:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/>
+       <EditText 
+        android:id="@+id/watch_person_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dp"
+        android:textColor="#00001F"
+        android:editable="false"
+        android:layout_toRightOf="@+id/watch_person_tv"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textSize="15sp"
+        />    
+    </RelativeLayout>
+    
+    <!-- 分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+     
+    <!-- 看房日期 -->
+    <RelativeLayout 
+        android:id="@+id/watching_date" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+       <TextView 
+        android:id="@+id/watch_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看房日期:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/>
+       <EditText 
+        android:id="@+id/watch_date_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/watch_date_tv"
+        android:textColor="#00001F"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textSize="15sp"
+        android:editable="false"
+        /> 
+    </RelativeLayout>
+    
+    <!-- 分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+    
+     <!-- 手机号 -->
+    <RelativeLayout 
+        android:id="@+id/phone_number" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+       <TextView 
+        android:id="@+id/phone_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/>
+       <EditText 
+        android:id="@+id/phone_number_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dp"
+        android:editable="false"
+        android:layout_toRightOf="@+id/phone_number_tv"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textColor="#00001F"
+        android:textSize="15sp"
+        />  
+    </RelativeLayout>
+    
+    <!-- 分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+    
+     <!-- 看房人数 -->
+    <RelativeLayout 
+        android:id="@+id/watchhouse_number" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+       <TextView 
+        android:id="@+id/watchhouse_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看房人数:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/>
+       <EditText
+        android:id="@+id/watchhouse_number_et" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="6dp"
+        android:editable="false"
+        android:textColor="#00001F"
+        android:layout_toRightOf="@+id/watchhouse_number_tv"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textSize="15sp"
+        />  
+       </RelativeLayout>
+         
+      <!-- 分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />  
+        
+     <!-- 看房说明 -->
+    <RelativeLayout 
+        android:id="@+id/watchhouse_explain" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+       <TextView 
+        android:id="@+id/watchhouse_explain_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看房说明:"
+        android:textColor="#505050"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"/>
+       <EditText 
+        android:id="@+id/watchhouse_explain_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#00001F"
+        android:paddingLeft="6dp"
+        android:editable="false"
+        android:layout_toRightOf="@+id/watchhouse_explain_tv"
+        android:background="@layout/edittextwhihoutcorner"
+        android:textSize="15sp"
+        />  
+       </RelativeLayout>
+       <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />  
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" 
+      android:orientation="vertical"
+      >    
+   	 
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        >
+        <View
+        android:layout_above="@+id/sure_watching_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#E0E0E0" />
+     <Button 
+        android:id="@+id/sure_watching_bt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_sure_orderwatching"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:text="取消预定看房"
+        android:layout_alignParentRight="true"/>   
+    </RelativeLayout>
+    
+    </LinearLayout>  
+</LinearLayout>

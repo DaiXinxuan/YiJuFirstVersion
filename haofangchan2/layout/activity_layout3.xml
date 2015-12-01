@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    <include layout="@layout/title_bar" /> 
+    <ImageView 
+        android:id="@+id/title_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/noticebanner"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    >
+
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background">
+	        <ImageView 
+	            android:id="@+id/activity_message_lin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/noticeact"/>
+
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background">
+	        <ImageView 
+	            android:id="@+id/constructor_lin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/noticegw"/>
+	
+	    </LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal"
+	    >
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background">
+	        <ImageView 
+	            android:id="@+id/project_message_lin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/noticexm"/>
+	   
+	    </LinearLayout>
+
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/linear_background">
+	        <ImageView 
+	            android:id="@+id/mycomment_lin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/noticepl"/>
+	 
+	    </LinearLayout>
+	</LinearLayout>
+
+	
+</LinearLayout>

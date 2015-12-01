@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup  
+        android:id="@+id/bottomRg"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:showDividers="end"
+        >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buton1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="0dp" />
+  
+        <RadioButton  
+            android:id="@+id/rb2"  
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:background="@drawable/buton2"  
+             />  
+        <RadioButton  
+            android:id="@+id/rb3" 
+            android:layout_width="0dp"
+            android:layout_height="40dp"  
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:background="@drawable/buton3"  
+             />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:button="@null"
+            android:background="@drawable/buton4"
+             /> 
+    </RadioGroup>
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+            android:id="@+id/house_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F0F0F0"
+            android:divider="#DBDBDB"
+            ptr:ptrAnimationStyle="flip"  
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:dividerHeight="1dp"/>
+        
+        <ListView 
+            android:id="@+id/info_list"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:background="#FFFFFF"
+	    	android:divider="#DBDBDB"
+	    	android:dividerHeight="1dp"
+	    	android:headerDividersEnabled="true"
+	    	android:footerDividersEnabled="true"
+	    	android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

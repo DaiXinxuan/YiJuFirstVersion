@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E0E0E0">
+    
+    <RelativeLayout
+    	android:id="@+id/search_contact_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005b97"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_user_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="取消"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_user_back"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search"/>
+            <EditText 
+                android:id="@+id/search_user_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:background="#FFFFFF"
+                android:inputType="phone"
+                android:hint="手机号"
+                android:textSize="15sp"/> 
+        </LinearLayout>
+        
+	</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:text="搜索结果："
+        android:textColor="#505050"
+        android:textSize="15sp"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+        
+        <TextView 
+	        android:id="@+id/search_user_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"/>
+	    <Button 
+	        android:id="@+id/search_user_add"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/search_user_addbutton"
+	        android:text="添加"
+	        android:textSize="15sp"
+	        android:textColor="#505050"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_marginTop="1dp"></LinearLayout>
+    
+</LinearLayout>

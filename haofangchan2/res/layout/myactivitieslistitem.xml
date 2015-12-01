@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:background="@drawable/comment_list"
+    android:padding="10dp" >
+    <ImageView 
+        android:layout_height="90dp"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/myactivities_img"/>
+    <RelativeLayout 
+        android:id="@+id/frl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myactivities_img"
+        android:layout_toRightOf="@+id/myactivities_img">
+        <TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:id="@+id/myactivities_title"
+	    android:text="我是标题"
+	    android:textSize="16sp"
+	    android:textColor="#505050"
+	    android:layout_marginLeft="10dp"/>
+	<TextView 
+	    android:layout_height="65dp"
+	    android:layout_width="match_parent"
+	    android:id="@+id/myactivities_text"
+	    android:text="i am the content"
+	    android:textSize="12sp"
+	    android:layout_marginLeft="10dp"
+	    android:textColor="#505050"
+		android:layout_below="@+id/myactivities_title"
+		android:layout_marginTop="5dp"/>
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/myactivities_date"
+	    android:textSize="10sp"
+	    android:textColor="#505050"
+	    android:layout_marginBottom="5dp"
+	    android:layout_below="@+id/myactivities_text"
+	    android:layout_alignParentRight="true"
+	    android:text="i am the date"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="清除缓存"
+        android:paddingLeft="10dp"
+        android:textColor="#505050"
+        android:textSize="16sp"
+        android:visibility="visible" />
+     <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textColor="#505050"
+            android:textSize="15sp"
+            android:text="确认清除缓存?" />
+
+     <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"
+            />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/negativeButton"
+            android:text="取消"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+           	android:textColor="#505050"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center" />
+        
+         <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#dedede"
+            />
+
+         <Button
+            android:id="@+id/positiveButton"
+            android:text="确认"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#505050"
+            android:background="#ffffff"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar" /> 
+	<ImageView 
+	    android:id="@+id/background"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:background="#000000"
+	    android:scaleType="fitXY"
+	    />
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dp"
+	    android:background="#DBDBDB"/>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <ImageView 
+	        android:id="@+id/qiandao_iv"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:src="@drawable/sign2x"/>
+	    <ImageView 
+	        android:id="@+id/duobao_iv"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:src="@drawable/treasure2x"/>
+	    <ImageView 
+	        android:id="@+id/paimai_iv"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:src="@drawable/auction2x"/>
+	    <ImageView 
+	        android:id="@+id/tuangou_iv"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:src="@drawable/group2x"/>
+	 </LinearLayout>
+	<ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line2x"
+  
+         />
+	<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#FFFFFF"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" 
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

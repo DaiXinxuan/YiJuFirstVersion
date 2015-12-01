@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0">
+    
+    <RelativeLayout
+        android:id="@+id/reserve_details_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="#005b97"
+	    android:padding="5dp" >
+	    
+	    <ImageView
+	        android:id="@+id/reserve_watchhouse_back"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_centerVertical="true"
+	        android:clickable="true"
+	        android:onClick="onClick"
+	        android:src="@drawable/tuoyuan4" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="预定看房详情"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" >
+	    </TextView>
+	    
+	</RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/reserve_details_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/reserve_details_title"
+        android:background="#FFFFFF"
+        android:text="房屋编号："
+        android:textSize="15sp"
+        android:padding="10dp"/>
+    
+    <RelativeLayout 
+        android:id="@+id/reserve_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+	    android:paddingBottom="5dp">
+        
+        <Button 
+            android:id="@+id/reserve_cancel"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="取消预定看房"
+	        android:textSize="15sp"
+	        android:textColor="#FFFFFF"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:background="@drawable/corner"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/reserve_details_code"
+        android:layout_above="@id/reserve_details_layout"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/reserve_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="看房人："
+            android:textSize="15sp"/>
+        
+        <TextView 
+            android:id="@+id/reserve_details_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="看房日期："
+            android:textSize="15sp"/>
+        
+        <TextView 
+            android:id="@+id/reserve_details_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="手机号："
+            android:textSize="15sp"/>
+        
+        <TextView 
+            android:id="@+id/reserve_details_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="看房人数："
+            android:textSize="15sp"/>
+        
+        <TextView 
+            android:id="@+id/reserve_details_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="看房说明："
+            android:textSize="15sp"/>
+        
+	</LinearLayout>
+        
+</RelativeLayout>

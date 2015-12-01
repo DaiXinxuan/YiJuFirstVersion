@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.haofangchan2"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+ 	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+ 	<!-- 蓝牙分享所需的权限 -->
+  	<uses-permission android:name="android.permission.BLUETOOTH" />
+  	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+- 
+<!--   启动画面要加上去除标题的主题，不然打开后会有标题显示  -->
+
+- 
+    <application
+        android:name="testandmanage.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3db948caf54c837e65db25a3643119d9" />
+- 		<activity
+			android:name="com.mob.tools.MobUIShell"
+		 	android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		 	android:configChanges="keyboardHidden|orientation|screenSize"
+		 	android:screenOrientation="portrait"
+		 	android:windowSoftInputMode="stateHidden|adjustResize" >
+		 	<intent-filter>
+		 		<data android:scheme="tencent100371282" />
+		 		<action android:name="android.intent.action.VIEW" />
+		 		<category android:name="android.intent.category.BROWSABLE" />
+		 		<category android:name="android.intent.category.DEFAULT" />
+		 	</intent-filter>
+		</activity>
+		
+		<!--微信分享回调 -->
+		<activity
+ 			android:name=".wxapi.WXEntryActivity"
+ 			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+ 			android:configChanges="keyboardHidden|orientation|screenSize"
+ 			android:exported="true"
+ 			android:screenOrientation="portrait" /> 		
+		<!-- QQ客户端回调 -->
+		<activity 
+			android:name="cn.sharesdk.tencent.qq.ResultReceiver"
+			android:launchMode="singleTask"
+			android:noHistory="true">
+			<!--
+			如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+			事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+			则分享结束以后不能得到正确的回调
+			-->
+			<intent-filter android:priority="1000" >
+				<data android:scheme="tencent100371282" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+			</intent-filter>
+		</activity>
+		
+        <activity
+            android:name="load.Load_Animation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:screenOrientation="portrait">
+- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="load.LoginActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="load.PasswordLost" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="load.Register" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.MainActivity" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="main.MainFragmentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="main.ChooseSellerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="main.CustomTabActivity2" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.Message_Activity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.Personalcenter_Activity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.Main_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="main.MainTabActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="setting.ChangePasswordActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="setting.Feedback" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="setting.MessageReminderActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="setting.SettingActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="connect.Connect_test_view" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="add_salebuilding_demo.Add_salebuilding_activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="testandmanage.Window_metrics" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.PersonalProfileActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="scanzbar.ScanzbarActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.MainSeehouseActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main_fragment.IntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="main.WatchActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.CalculateActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.OrderWatchingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="main.LatestNewsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:launchMode="singleTop"
+            android:name="main.HouseinfoActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.CommnetActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.CalculateResultActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.SentCommentActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.MyfriendActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="friendchat.FriendProfileActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ChatActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ZhiyeguwenActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main_fragment.ActivityInfo" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main_fragment.AuctionInfo" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main_fragment.GroupInfo" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.IntroductionActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ProjectMessageActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ConsultCommentActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ConsultantActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="main.MyActivitiesActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.ReceiveMagazineActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.AttentionRoom_Activity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.AttentionRoomNumberActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.searchContact" 
+            android:screenOrientation="portrait"/>
+        <activity android:name="main.searchUser" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="main.MessageCenterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="main.OrderWatchingItem_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="main.OrderMoreInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:launchMode="singleTop"
+            android:name="web.WebActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="main.SendCommentActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.uranus.amaptest.MapViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="testandmanage.MyApplicationAlertDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            >
+        </activity>
+        <activity 
+            android:name="main_fragment.MessageAlertDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            >
+        </activity>
+- 
+<!--   设置环信应用的appkey  -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="kandom#yiju" />
+        <!-- <meta-data android:name="EASEMOB_APPKEY" android:value="uranus#goodpropertytest" /> -->
+- 
+<!--   声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+    </application>
+
+</manifest>

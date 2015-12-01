@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+    <RelativeLayout
+                android:id="@+id/myfriend_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#005b97" >
+
+                <TextView
+                    android:id="@+id/myfriend_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+	                android:textSize="20sp"
+                    android:text="聊天"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/myfriend_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:text="添加"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+	<RelativeLayout 
+	    android:id="@+id/myfriend_searchbar"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:padding="7dp"
+	    android:background="#E0E0E0"
+	    android:layout_below="@+id/myfriend_topbar">
+
+	    <EditText
+	        android:id="@+id/myfriend_search"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/searcheditview"
+	        android:padding="2dp"
+	        android:editable="false"
+	        android:clickable="false"
+	        android:layout_centerInParent="true"
+	         />
+		<TextView 
+		    android:id="@+id/myfriend_searchtext"
+		    android:text="搜索"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textColor="#E0E0E0"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/myfriend_searchcenter"
+		    android:textSize="16sp"
+		    android:clickable="false"
+		    android:visibility="visible"/>
+		<ImageView 
+		    android:id="@+id/myfriend_searchcenter"
+		    android:layout_centerInParent="true"
+		    android:layout_width="0dp"
+		    android:clickable="false"
+		    android:layout_height="0dp"/>
+		<ImageView 
+		    android:src="@drawable/search"
+		    android:id="@+id/myfriend_searchimg"
+		    android:layout_height="18dp"
+		    android:layout_width="18dp"
+		    android:visibility="visible"
+		    android:clickable="false"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@+id/myfriend_searchcenter"/>
+	</RelativeLayout>
+
+	<rewriteView.RewriteExpandListViewWithDelete
+	    android:id="@+id/myfriend_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/myfriend_searchbar"
+	    android:visibility="visible" >
+	</rewriteView.RewriteExpandListViewWithDelete>
+	<ListView 
+	    android:id="@+id/myfriend_messagelist"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/myfriend_searchbar"
+	    android:visibility="gone"></ListView>
+</RelativeLayout>

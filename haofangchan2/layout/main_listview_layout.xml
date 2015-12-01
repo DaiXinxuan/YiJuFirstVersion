@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/house_icon"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/house_icon" >
+
+        <LinearLayout
+            android:id="@+id/fll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sell_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2号楼"
+                android:textColor="#505050"
+                 />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1室1厅"
+                    android:textColor="#505050"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/info"
+                    android:text="面积100㎡"
+                    android:textColor="#505050"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/huxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/info"
+                    android:layout_below="@+id/info"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/textbackground"
+                    android:text="b471dd"
+                    android:textColor="#FF00FF" />
+
+                <TextView
+                    android:id="@+id/房源"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/huxing"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/huxing"
+                    android:background="@drawable/textbackground2"
+                    android:text="活动房源"
+                    android:textColor="#00EC00" />
+
+                <TextView
+                    android:id="@+id/ob_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/huxing"
+                    android:layout_marginTop="5dp"
+                    android:text="已有XX人关注"
+                    android:textColor="#EA0000" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="8700"
+                    android:textColor="#EA0000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </TextView>
+"
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/attention_button"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:src="@drawable/att2" />
+
+</RelativeLayout>

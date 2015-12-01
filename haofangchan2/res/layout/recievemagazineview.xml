@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DBDBDB" >
+    <RelativeLayout
+                android:id="@+id/magazine_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#005b97"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:id="@+id/magazine_goback"
+                    android:contentDescription="ss"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/tuoyuan4"
+                    android:clickable="true" />
+                <TextView
+                    android:id="@+id/magazine_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="收到的杂志"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+	</RelativeLayout>
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <handmark.pulltorefresh.library.PullToRefreshListView
+		    android:id="@+id/magazine_list"
+		    xmlns:ptr="http://schemas.android.com/apk/res-auto"  
+		    ptr:ptrAnimationStyle="flip" 
+		    android:layout_height="match_parent"
+		    android:layout_width="match_parent"
+	    />
+	    <ImageView 
+	        android:id="@+id/noMagzine"
+	        android:contentDescription="ss"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:scaleType="fitXY"
+	        android:visibility="invisible"
+	        android:src="@drawable/nomagzine"/>
+	</FrameLayout>
+	   
+</LinearLayout>

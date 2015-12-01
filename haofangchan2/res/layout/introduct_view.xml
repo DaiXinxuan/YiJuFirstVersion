@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" 
+    android:padding="10dp">
+    <TextView 
+        android:id="@+id/intr_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:text="         XX房产开发有限公司是一家大型商业地产项目为主的实业企业，注册资金1000万元人民币，具有国家房产开发以及资质，2002年四川工商行政管理局和四川省建设厅核准设立。"/>
+
+</LinearLayout>

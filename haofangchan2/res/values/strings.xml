@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">宜居掌售</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="payAttention">1、确认预定看房后，可在个人中心进行取消</string>
+    <color name="OrangeColor">#FF9224</color>
+</resources>

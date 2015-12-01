@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005b97"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/goback"
+            android:contentDescription="ss"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tuoyuan4" />
+
+        <TextView
+            android:id="@+id/attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关注的房号"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+	<FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+       <handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/roomnumber_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        ptr:ptrAnimationStyle="flip" />
+	    <ImageView 
+	        android:id="@+id/noRoom"
+	        android:contentDescription="ss"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/noroom"
+	        android:visibility="invisible"/>
+	</FrameLayout>
+
+
+</LinearLayout>

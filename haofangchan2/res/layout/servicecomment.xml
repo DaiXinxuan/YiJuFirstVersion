@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005b97"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/tuoyuan4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="服务评价"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#505050"
+            android:textSize="18sp"
+            android:text="服务评价：" />
+
+        <RadioGroup
+            android:id="@+id/consultant_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/goodcomment"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:background="@drawable/rabuttton1"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/mediumcomment"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:background="@drawable/rabutton2"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/badcomment"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:background="@drawable/rabutton3"
+                android:layout_weight="1"
+                android:button="@null" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/scomment_textfield"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/prifile_et2"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="填写评论内容"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" >
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/sendbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sendcommentbutton"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="发表评论"
+                android:textColor="#646464" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

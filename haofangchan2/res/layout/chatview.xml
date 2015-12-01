@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:focusable="true"   
+	android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/chat_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005b97"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/chat_title_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tuoyuan4"
+            android:clickable="true" />
+        <TextView 
+            android:id="@+id/unReadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chat_title_btn"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" 
+            android:text="聊天（）"
+            />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="User_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/chat_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="资料"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chat_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_buttom"
+        android:layout_below="@+id/chat_topbar" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/chat_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#DBDBDB"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/chat_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="40dp"
+            android:background="@drawable/searcheditview"
+            android:gravity="center_vertical|left"
+            android:textColor="#505050"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/chat_sent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:background="@drawable/chat_button"
+            android:textColor="#FFFFFF"
+            android:text="发送" />
+    </LinearLayout>
+
+</RelativeLayout>

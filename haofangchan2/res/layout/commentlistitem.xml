@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="10dp"
+    android:background="@drawable/comment_list" >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"  
+        android:layout_height="55dp"
+        android:layout_width="55dp"
+        android:id="@+id/comment_image"
+        />
+    
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="User_name"
+	    android:id="@+id/comment_username"
+	    android:textSize="14sp"
+	    android:textColor="#505050"
+	    android:layout_toRightOf="@+id/comment_image"
+	    android:layout_marginLeft="10dp"/>
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="Date"
+	    android:id="@+id/comment_date"
+	    android:textColor="#505050"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:textSize="12sp"/>
+	<TextView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="今天天气很好，哈哈，大家好啊，这个房子真不错，可惜我没钱，啊哈哈"
+	    android:textColor="#505050"
+	    android:id="@+id/comment_text"
+	    android:layout_below="@+id/comment_username"
+	    android:textSize="12sp"
+	    android:layout_toRightOf="@+id/comment_image"
+	    android:layout_marginLeft="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:padding="10dp"
+	    android:background="#005b97"
+	    >
+		<ImageView 
+		    android:id="@+id/watch_back"
+		    android:layout_height="25dp"
+		    android:layout_width="25dp"
+		    android:clickable="true"
+		    android:layout_centerVertical="true"
+		    android:src="@drawable/tuoyuan4"/>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="看房"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" >
+		</TextView>
+
+	 </RelativeLayout>
+	 <LinearLayout 
+	 	android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        >
+	    <ImageView 
+	        android:id="@+id/watch_houseiv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/showingss1x"/>
+	    <ImageView 
+	        android:id="@+id/car_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitXY"
+	        android:layout_weight="1"
+	        android:src="@drawable/parkingn1x"/>
+	 </LinearLayout>
+	 <!-- 
+	 	 <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:scaleType="matrix"
+        android:src="@drawable/gray"
+         />
+	 
+	 
+	  -->
+
+	<android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#FFFFFF"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" 
+        >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

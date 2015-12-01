@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:background="#ffffff"
+	android:focusableInTouchMode="true" >
+	
+    <RelativeLayout
+    	android:id="@+id/search_contact_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#005b97"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/search_contact_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tuoyuan4"
+            android:clickable="true" />
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_centerInParent="true"
+            android:text="搜索好友"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+        
+ 
+        
+	</RelativeLayout>
+    
+    <RelativeLayout 
+	    android:id="@+id/search_contact_searchbar"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:padding="7dp"
+	    android:background="#E0E0E0"
+	    android:layout_below="@id/search_contact_topbar">
+
+	    <EditText
+	        android:id="@+id/search_contact_search"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/searcheditview"
+	        android:padding="2dp"
+	        android:layout_centerInParent="true"/>
+		<TextView 
+		    android:id="@+id/search_contact_searchtext"
+		    android:text="搜索"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textColor="#E0E0E0"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/search_contact_searchcenter"
+		    android:textSize="16sp"
+		    android:visibility="visible"/>
+		<ImageView 
+		    android:id="@+id/search_contact_searchcenter"
+		    android:layout_centerInParent="true"
+		    android:layout_width="0dp"
+		    android:layout_height="0dp"/>
+		<ImageView 
+		    android:src="@drawable/search"
+		    android:id="@+id/search_contact_searchimg"
+		    android:layout_height="18dp"
+		    android:layout_width="18dp"
+		    android:visibility="visible"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/search_contact_searchcenter"/>
+	</RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/search_contact_contactsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_contact_searchbar">
+    </ListView>
+
+</RelativeLayout>

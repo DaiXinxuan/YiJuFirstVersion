@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" 
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/left_iv"
+        android:layout_width="30dp"
+        android:scaleType="fitCenter"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/house" />
+
+	<TextView 
+	    android:id="@+id/first_tv"
+	    android:layout_toRightOf="@+id/left_iv"
+	    android:layout_centerVertical="true"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="10dp"
+	    android:text="皇家丽景"
+	    android:textColor="#505050"
+	    android:textSize="20sp"/>
+</RelativeLayout>

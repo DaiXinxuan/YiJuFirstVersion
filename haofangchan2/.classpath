@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/universal-image-loader-1.9.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/zbar.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/dnsjava-2.1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/easemobchat_2.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-viewbadger.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mframework.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ AMap_Services_V2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/AMap_3DMap_V2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Android_Location_V1.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-async-http-1.4.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/litepal-1.2.1-src.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

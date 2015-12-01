@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/feedback_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#005b97" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tuoyuan4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户反馈"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/feedback_rl1" >
+
+        <TextView
+            android:id="@+id/feedback_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="意见内容"
+            android:layout_alignLeft="@+id/feedback_submit1"
+            android:textColor="#505050"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/feedback_et1"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/feedback_submit1"
+            android:layout_alignRight="@+id/feedback_submit1"
+            android:layout_below="@+id/feedback_tv1"
+            android:background="@drawable/feedback_et1"
+            android:hint="对我们有什么意见或者建议,我们将改进"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/feedback_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_et1"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/feedback_submit1"
+            android:text="联系方式"
+            android:textColor="#505050"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/feedback_et2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/feedback_submit1"
+            android:layout_alignRight="@+id/feedback_submit1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/feedback_tv2"
+            android:background="@drawable/feedback_et1"
+            android:hint="请留下您的手机号码或邮箱"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/feedback_submit1"
+	        android:background="@drawable/ok_button"
+            android:layout_below="@+id/feedback_et2"
+            android:layout_width="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:text="提          交"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+     <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#005b97"
+    >
+
+    <ImageButton 
+        android:id="@+id/setting_title_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/tuoyuan4"
+		android:layout_centerVertical="true"
+		android:clickable="true"
+		android:onClick="onClick"
+       
+        />
+
+    <TextView
+        
+        android:id="@+id/setting_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:text="设置"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+      
+         </RelativeLayout>
+         
+          <ImageView 
+           android:layout_width="match_parent"
+           android:layout_height="5dp"
+           android:background="#ebebeb"/>
+          
+          <ListView 
+              android:id="@+id/list1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">    
+          </ListView>
+     
+          <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ebebeb"/>
+          	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:padding="10dp" >
+           <Button
+            android:id="@+id/exit"
+            android:textSize="18sp"
+	        android:background="@drawable/exit_buttonview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="退出登录"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff" />
+</RelativeLayout>
+</LinearLayout>
